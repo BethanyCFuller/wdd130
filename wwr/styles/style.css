@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Mukta&display=swap');
+
 
 #content {
     max-width: 1600px;
@@ -5,13 +7,15 @@
 }
 
 nav a {
+    padding: 35px;
     text-align: center;
-    color: black;
+    color: rgb(204, 109, 74);
     text-decoration: none;
 }
 
 nav a:hover {
     background-color: rgb(204, 109, 74);
+    color: #f4ae99;
 }
 
 #hero-msg h1 {
@@ -30,32 +34,47 @@ main section {
     text-align: center;
 }
 
+main section img {
+    box-sizing: border-box;
+}
+
 #background {
     height: 725px;
-    background-color: rgb(81, 87, 61);
+    background-color: #f4ae99;
 }
 
 body {
     background-color: white;
+    font-family: mukta;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background-color: #f4ae99; 
+    background-color: #f4ae99;
 }
 
 .book, .join {
     background-color: #f4ae99;
-    color: black;
+    color: rgb(204, 109, 74);
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
     background-color: rgb(204, 109, 74);
-    color: black;
+    color: #f4ae99;
 }
 
 .home-title {
-    color: white;
+    color:  rgb(204, 109, 74);
+    font-family: lobster;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4 {
@@ -63,29 +82,42 @@ h4 {
 }
 
 .msg {
-    background-color: rgb(81, 87, 61);
+    background-color: #f4ae99;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 {
-    color: rgb(165, 169, 153);
+    color: rgb(204, 109, 74);
+    font-family: lobster;
 }
 
 .msg p {
-    color: rgb(165, 169, 153);
+    color: black;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 footer {
-    background-color: rgb(81, 87, 61);
-    color: rgb(165, 169, 153);
+    background-color: #f4ae99;
+    color: black;
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+
+footer .social img {
+    padding-top: 15px;
 }
 
 footer a {
-    color: rgb(165, 169, 153);
+    color: rgb(204, 109, 74);
     text-decoration: none;
 }
 
 footer a:hover {
-    color: rgb(165, 169, 153);
+    background-color: rgb(204, 109, 74);
+    color:#f4ae99;
+    text-decoration: none;
 }
 
 footer p {
@@ -100,10 +132,24 @@ footer p a:hover {
     width: 80px;
 }
 
+#logo_link {
+    padding-top: 5px;
+}
+
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img {
     width: 100%
+}
+
+h2 {
+    margin: 0;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+    border: 10px solid rgb(78, 87, 71);
 }
