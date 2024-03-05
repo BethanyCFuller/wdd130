@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Mukta&display=swap');
 
 
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
 }
 
-nav a {
+nav {
     display: flex;
     justify-content: space-around;
+}
+
+nav a {
     padding: 35px;
     text-align: center;
     background-color: #bdb9b0;
@@ -63,7 +67,8 @@ main section img {
     height: 725px;
     background-color: #bdb9b0;
     grid-column: 1/11;
-    grid-row: 2/3;
+    grid-row: 4/9;
+    z-index: -1;
 }
 
 body {
@@ -102,7 +107,7 @@ header {
     margin-top: 10px;
 }
 
-home-grid {
+.home-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
@@ -133,7 +138,7 @@ h4 {
 
 footer {
     background-color: #bdb9b0;
-    color: black;
+    color: #424242;
     padding: 25px 50px;
     margin-top: 200px;
     display: flex;
@@ -146,18 +151,16 @@ footer .social img {
 }
 
 footer a {
-    background-color: #424242;
-    color: #bdb9b0;
+    color: #424242;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
 }
 
 footer a:hover {
-    background-color: #507662;
-    color: #bac0bc;
+    color: #507662;
     text-decoration: none;
 }
 
@@ -166,7 +169,7 @@ footer p {
 }
 
 footer p a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .logo {
@@ -198,23 +201,20 @@ h2 {
 }
 
 
-card-img {
-    border: 10px solid #d9c2a3;
+.card-img {
+    border: 10px solid #bdb9b0;
     transition: transform .5s;
-    box-shadow: 5px 55px 10px #424242;
+    box-shadow: 5px 5px 10px #6f7364;
+    width: 100%;
 }
 .card-img:hover {
     opacity: .6;
     transform: scale(1.1);
 }
 
-.card-img, .mountains {
-    width: 100%;
-}
-
 .rivers-card {
     grid-column: 2/4;
-    grid-row: 2/3
+    grid-row: 2/3;
 }
 
 .camping-card {
@@ -231,7 +231,19 @@ card-img {
     grid-column: 2/7;
     grid-row: 5/8;
     box-shadow: 5px 5px 10px #6f7364;
+    width: 100%;
 }
+
+/* RIVERS CSS */
+
+.rivers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+
 
 
 @media screen and (max-width: 900px) {
@@ -277,3 +289,5 @@ card-img {
         margin-top: 25px;
     }
 }
+
+
