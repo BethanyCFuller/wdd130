@@ -234,16 +234,151 @@ h2 {
     width: 100%;
 }
 
+
+
 /* RIVERS CSS */
 
 .rivers-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(10, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 100px;
+}
+
+.idaho-image {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.idaho-title {
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+.idaho-blurb {
+    grid-column: 2/4;
+    grid-row: 4/5;
 }
 
 
+.utah-image {
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+.utah-title {
+    grid-column: 5/7;
+    grid-row: 3/4;
+}
+.utah-blurb {
+    grid-column: 5/7;
+    grid-row: 4/5;
+}
 
 
+.arizona-image {
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+.arizona-title {
+    grid-column: 8/10;
+    grid-row: 3/4;
+}
+.arizona-blurb {
+    grid-column: 8/10;
+    grid-row: 4/5;
+}
+
+
+/* Contact Us CSS: */
+.contact h1 {
+    text-align: center;
+    width: 100%;
+}
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 50px;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    padding-right: 10px;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+    padding: 10px;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 0.5em;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 30px;
+  }
+  
+
+  #feedback {
+    background-color: #bac0bc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+    }
+    .moveDown {
+        margin-top: 3em;
+    }
 
 
 @media screen and (max-width: 900px) {
